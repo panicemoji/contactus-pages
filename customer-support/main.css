@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+body{
+    font-family: 'Muli';
+    font-size:16px;
+}
+
+#info{width:50%;
+    margin:auto;}
+
+
+input[type='text']{
+    border-radius: 15px;
+    border: 1px solid #b1b2b5;
+    border-width:1px;
+    margin:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-align:center;
+}
+
+select{
+    border-radius: 15px;
+    border: 1px solid #b1b2b5;
+    border-width:1px;
+    margin:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding:5px;
+}
+
+input,select,textarea{
+    transition-duration:0.3s;
+}
+input:hover, select:hover, textarea:hover{
+    background-color:#eeeef0;
+    transition-duration:0.3s;
+}
+
+.inputgroup{
+    width:40%;
+    margin:auto;
+}
+
+#message{
+
+    margin:auto;
+    border-radius: 15px;
+    border: 1px solid #b1b2b5;
+    border-width:1px;
+    margin:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+#submit{
+    background-color:#2490ce;
+    color:white;
+    border-radius:25px;
+    border: 1px solid white;
+    padding-top:12.5px;
+    padding-bottom:12.5px;
+    padding-left:15.5px;
+    padding-right:15.5px;
+    
+}
+
+textarea:focus, input:focus, select:focus{
+    outline: none;
+}
+
+@media(max-width:768px){
+    .inputgroup{
+        width:100%;
+        margin:auto;}
+
+    #info{width:100%;}
+}
+
+.container{
+    padding-top:1%;
+    position:0;
+    border:solid 1px #b1b2b5;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top:solid 0px white;
+    padding-bottom:30px;
+}

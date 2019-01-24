@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Support</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href='main.css'>
+</head>
+
+<body>
+<div class='container'>
+    <div class='row'>  
+        <div class='col-sm-12 text-center'>
+            <div class='contact'>
+
+                <span class='glyphicon glyphicon-question-sign' style='text-align:center;font-size:50px;display:block;margin:auto;color:#b1b2b5;'></span>
+
+                <h1 id='title'>Customer Support</h1>
+
+                <p id='info'>
+                    Thank you for being a customer of Moai Industries! 
+                    Please contact Customer Support through the form below. 
+                    If the service is urgent, contact us through our hotlines:
+                    <br><br>
+                    <b>
+                        UK - 020 766 4300<br>
+                        Monday-Saturday 8AM - 9PM GMT<br><br>
+
+                        International - 040 823 9412<br>
+                        Monday-Saturday 8AM - 9PM GMT
+                    </b>
+                    
+                </p>
+
+                <br><br>
+
+                <form id='contactform'>
+                    <select id='products' required='required'>
+                        <option value=''>*Choose a product</option>
+                        <option value='Moai Head'>Moai Head</option>
+                        <option value='Moai Carpet'>Moai Carpet</option>
+                        <option value='Moai Mug'>Moai Mug</option>
+                    </select>
+                    <br><br>
+                    <div class='inputgroup'>
+                        <input type='text' placeholder='*Forename' onfocus="this.placeholder = ''" onblur="this.placeholder = '*Forename'">
+                        
+                        <input type='text' placeholder='*Surname' onfocus="this.placeholder = ''" onblur="this.placeholder = '*Surname'">
+                    </div>
+
+                    <div class='inputgroup'>
+                            <input type='text' placeholder='*Email' onfocus="this.placeholder = ''" onblur="this.placeholder = '*Email'">
+                            <input type='text' placeholder='Phone' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'">
+                    </div>
+                    <br>
+                    <textarea id='message' type='text' rows="6" cols="50" required='required' placeholder='*Type a message'></textarea>
+
+                    <br><br>
+
+                    *We should contact you by:<br>
+                   
+                    <label class="radiocontainer">
+                            <input type="radio" checked="checked" name="contactmethod" value='Email'>
+                            <span class="checkmark"></span>
+                            Email
+                    </label><br>
+                    <label class="radiocontainer">
+                            <input type="radio" checked="checked" name="contactmethod" value='Email'>
+                            <span class="checkmark"></span>
+                            Phone
+                    </label><br>
+
+                    <input id='submit' type='submit' value='Submit'> 
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>  
+</body>
+
+</html>
