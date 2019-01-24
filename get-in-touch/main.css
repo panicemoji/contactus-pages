@@ -1,0 +1,56 @@
+@font-face{
+    font-family : 'manrope';
+    src: url('manrope.otf');
+}
+
+body 
+{
+    font-family:'manrope';
+}
+
+#inputs input, textarea  {
+    width:400px
+}
+@media(max-width:768px){
+    #inputs input, textarea {
+        width:500px;
+    }
+}
+
+#inputs input, textarea {
+    padding:13.5px;
+    border: solid 1.2px rgb(223, 223, 223);
+    border-radius:5px;
+}
+
+#inputs input::placeholder, textarea::placeholder {
+    color: rgb(177, 177, 177);
+}
+
+#inputs input:focus, textarea:focus{
+    outline: none;
+}
+
+#main
+{
+    
+    background-color:rgb(245, 245, 245);
+}
+
+.submit{
+    border:none;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-weight: bold;
+    padding-left: 43px;
+    padding-right:43px;
+    
+}
+
+h5{
+    font-size:18px;
+}
