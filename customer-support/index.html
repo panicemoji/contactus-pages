@@ -4,13 +4,21 @@
 <head>
     <title>Customer Support</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='main.css'>
+
+    
+
 </head>
 
 <body>
+        
 <div class='container'>
     <div class='row'>  
         <div class='col-sm-12 text-center'>
+            <div id='complete' style='display:none;'>
+                <p>Thank you for your message - We will be in contact with you soon!</p>
+            </div>
             <div class='contact'>
 
                 <span class='glyphicon glyphicon-question-sign' style='text-align:center;font-size:50px;display:block;margin:auto;color:#b1b2b5;'></span>
@@ -58,21 +66,40 @@
                     <br><br>
 
                     *We should contact you by:<br><br>
-                    <input type="radio" name="contactmethod" id="email" value="email">
+                    <input required='required' type="radio" name="contactmethod" id="email" value="email">
                     <label for="email">Email</label>
                     &nbsp;&nbsp;&nbsp;&nbsp;    
-                    <input type="radio" name="contactmethod" id="phone" value="phone">
+                    <input required='required' type="radio" name="contactmethod" id="phone" value="phone">
                     <label for="phone">Phone</label>
                     <br><br>
 
-                    <input id='submit' type='submit' value='Submit'> 
+                    <input class="submit" id='submit' type="submit" value="Submit" /> <br><br>
+
+                    <i style="color:#cdcecf">Fields marked with a * are required</i>
                 </form>
-
-
             </div>
         </div>
     </div>
 </div>  
+
+<script>
+        document.getElementById('complete').style.opacity = 0;
+        $('#contactform').submit(function () {
+            sendForm();
+            return false;
+        });
+
+        function sendForm(){
+            console.log("sent!");
+            $('.contact').fadeOut(600, function(){
+                $('#complete').fadeTo(300,1);
+                
+            });
+
+                
+        }
+</script>
+
 </body>
 
 </html>
